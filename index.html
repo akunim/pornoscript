@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script>
+var character = ["Angela","Penny","Julia","Donna","Lisa","Rita","Naz","Layla","Rachel","Ramona","Sally","Marcie","Selma","Sophie","Susanna","Ellen"]
+var	act = ["Anal","Ass Day","Double Penetration (O + A)","Glory Hole","Shower Sex","Groped","Naughty Photo","Talking Dirty","O Face","Against the Wall","Casting Couch","Double Blowjob","Dominated","Choking","Spitroast","From Behind","Licking","Pregnant","Too Big","Sex In Water","Nipple Sucking (Giving)","Instant Loss","Nipple Sucking (Receiving)","Voyeurism","Threesome With the Next Roll","Ball Licking","Ahegao","Caught on Film","Giving Head","Aphrodesiac","Double Penetraion (A + V)","Drunk","Double Penetration (O + V)","Fingerbang","Cum on Chest","Face Fuck","Piledriver","Body Painting","Handcuffs","Chest Day","Deep Throat","Cowgirl","Collar","Tied Up","Thighjob","Sixty-nine (top)","Sixty-nine (bottom)","Cum in Mouth","Anvil Position","Face Sitting","Cum on Belly","Stockade","Cum on Butt","Cum on Face","Creampie","Cunnilingus","Doggystyle","Footjob","Hair Pulling","Handjob","Stripping","Hotdogging","Hypnosis","Kissing","Upright Sixty-nine","Missionary","Prone Bone","Public","Reverse Cowgirl","Rimjob (giving)","Rimjob (getting)","Sex Toy","Spanking","Standing Sex","Titjob"]
+var outfit = ["Angel","Athletic Wear","Bikini","One-piece","Bike Shorts","Slutty Cat","Oiled Up","Tube Top","Yoga Pants","Daisy Dukes","Hoodie Only","Goth","Flapper Dress","Miniskirt","Sling Bikini","Apron Only","Bimbo","Wedding Dress","Outfit for when the police come to inform me that my rich husband died under mysterious circumstances","Pregnant","Business Wear","Collar","Cheerleader","Devil","Fantasy","Handcuffs","Body Painting","Panties","Fast Food Uniform","Lingerie","Loincloth","Shoes Only","Underwear","Bottomless T-shirt","Maid","Turtleneck","Latex","Police Uniform","Nurse","Pajamas","Party Dress","Pasties","Schoolgirl","Thigh-highs","Witch","Nun","Topless Jeans","Super Hero","Ballgag","Naked","Naked","Naked","Naked","Naked"]
+
+function roll() {
+  console.log("Waddup");
+  var c = character[Math.round(Math.random() * (character.length - 1) + 1)];
+  var a = act[Math.round(Math.random() * (act.length - 1) + 1)];
+  var o = outfit[Math.round(Math.random() * (outfit.length - 1) + 1)];
+
+  document.getElementById("character").innerHTML = c;
+  document.getElementById("act").innerHTML = a;
+  document.getElementById("outfit").innerHTML = o;
+}
+</script>
+
+<center style="margin-top:20%">
+  <button class="btn btn-primary btn-lg" onclick="roll()")>
+    Roll
+  </button>
+
+  <div class="results">
+    <h2 id="character"></h2>
+    <h2 id="act"></h2>
+    <h2 id="outfit"></h2>
+  </div>
+</center>
